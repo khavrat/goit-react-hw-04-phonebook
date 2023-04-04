@@ -9,7 +9,7 @@ const LS_KEY = 'Contacts';
 function App() {
   const [filter, setFilter] = useState('');
   const [contacts, setContacts] = useState(() => {
-    return JSON.parse(localStorage.getItem(LS_KEY)) ?? '';
+    return JSON.parse(localStorage.getItem(LS_KEY)) ?? [];
   });
 
   useEffect(() => {
